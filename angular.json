@@ -64,16 +64,6 @@
                             "extractLicenses": false,
                             "sourceMap": true,
                             "namedChunks": true
-                        },
-                        "de": {
-                            "localize": [
-                                "de"
-                            ]
-                        },
-                        "fr": {
-                            "localize": [
-                                "fr"
-                            ]
                         }
                     },
                     "defaultConfiguration": "production"
@@ -85,14 +75,9 @@
                             "browserTarget": "i18exmple:build:production"
                         },
                         "development": {
-                            "browserTarget": "i18exmple:build:fr"
-                        },
-                        "de": {
-                            "browserTarget": "i18exmple:build:development,en-US"
-                        },
-                        "fr": {
-                            "browserTarget": "i18exmple:build:development,fr"
+                            "browserTarget": "i18exmple:build:development"
                         }
+                        
                     },
                     "defaultConfiguration": "development"
                 },

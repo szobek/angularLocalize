@@ -1,4 +1,4 @@
-import { Component, Inject, LOCALE_ID } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,8 @@ import { Component, Inject, LOCALE_ID } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor() {  }
-  msg='<span i18n="@@custom2">másik</span>'  
+  msg:string=""
+  constructor() {
+  this.msg=$localize`:@@custom2:&lt;span i18n="custom2" class="cssOsztaly" &gt;other&lt;/span&gt;`
+  }
 }
