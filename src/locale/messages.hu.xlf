@@ -8,7 +8,7 @@
       </trans-unit>
       <trans-unit id="custom2" datatype="html">
         <source>
-          :@@custom2:&lt;span i18n="@@custom2" class="cssOsztaly" &gt;other&lt;/span&gt;
+          &lt;span i18n="@@custom2" class="cssOsztaly" &gt;other&lt;/span&gt;
         </source>
         <target>
           &lt;span i18n="@@custom2" class="cssOsztaly" &gt;egyéb&lt;/span&gt;
