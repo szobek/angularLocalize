@@ -2,16 +2,24 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="custom1" datatype="html">
-        <source>Hello</source>
+      <trans-unit id="card_1" datatype="html">
+        <source>&lt;span i18n="@@card_1" class=""&gt;first line&lt;/span&gt;</source>
         <target>szia</target>
       </trans-unit>
-      <trans-unit id="custom2" datatype="html">
+      <trans-unit id="card_2" datatype="html">
         <source>
-          &lt;span i18n="@@custom2" class="cssOsztaly" &gt;other&lt;/span&gt;
+          &lt;span i18n="@@card_2"class=""&gt;second line&lt;/span&gt;
         </source>
         <target>
-          &lt;span i18n="@@custom2" class="cssOsztaly" &gt;egyéb&lt;/span&gt;
+          kettes
+        </target>
+      </trans-unit>
+      <trans-unit id="card_3" datatype="html">
+        <source>
+          &lt;span class="cssOsztaly" &gt;other&lt;/span&gt;
+        </source>
+        <target>
+          &lt;span class="cssOsztaly" &gt;egyéb&lt;/span&gt;
         </target>
       </trans-unit>
     </body>

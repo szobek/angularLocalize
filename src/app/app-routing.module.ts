@@ -3,13 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {path:"en-US",component:AppComponent},
-  {path:"fr",component:AppComponent},
-  {path:"de",component:AppComponent},
+  {path:'login',component:AppComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{bindToComponentInputs:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
