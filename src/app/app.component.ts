@@ -18,11 +18,11 @@ webPageParamSubscribe:number=1
   }
 
   ngOnInit() {
-    this.callService.checkParamsInUrl(this._router)
-    setTimeout(()=>{this.callService.testMethod()},12000)
-    setTimeout(()=>{this.callService.testMethod()},22000)
-    setTimeout(()=>{this.callService.testMethod3()},2*60*1000)
-    setTimeout(()=>{this.callService.testMethod2()},31*60*1000)
+    // this.callService.checkParamsInUrl(this._router)
+    // setTimeout(()=>{this.callService.testMethod()},12000)
+    // setTimeout(()=>{this.callService.testMethod()},22000)
+    // setTimeout(()=>{this.callService.testMethod3()},2*60*1000)
+    // setTimeout(()=>{this.callService.testMethod2()},31*60*1000)
   }
 
 }

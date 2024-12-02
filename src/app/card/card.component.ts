@@ -1,26 +1,23 @@
-import { Component, Input } from '@angular/core';
-import { cardDatas } from '../options';
-import { Router, RoutesRecognized } from '@angular/router';
+import { Component } from '@angular/core';
+import { AbstractFormWrapper } from '../AbstractFormWrapper';
+import { FormWrapperService } from '../form-wrapper-service.service';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  styleUrls: ['./card.component.scss'],
+  providers: [
+    {
+      provide: AbstractFormWrapper,
+      useClass: FormWrapperService,
+    },
+
+  ]
 })
 export class CardComponent {
-constructor(private router: Router){this.getCodeFromUrl()}
-getCodeFromUrl() {
-  this.router.events.subscribe(val => {
-const code=false
-    if (val instanceof RoutesRecognized) {
-      const param = val.url
-      const code = param.split("&")[1].split("=")[1]
-      console.log(code); 
-      console.log("code"); 
-      
-    }else{
-      console.log("/////////////////////////////");
+  textInCardComponent: string = "card component"
+  constructor(private formWrapperService: FormWrapperService) { }
 
-    }
-  })
-}
+  onClickHandle() {
+    this.formWrapperService.call(this)
+  }
 }

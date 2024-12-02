@@ -8,12 +8,15 @@ import { CardComponent } from './card/card.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { RouterModule } from '@angular/router';
+import { LoaderComponent } from './loader/loader.component';
+import { ChartComponent } from './chart/chart.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent
+    CardComponent,
+    LoaderComponent,
+    ChartComponent
   ],
   imports: [
     FormsModule,
@@ -22,9 +25,7 @@ import { RouterModule } from '@angular/router';
     NgbModule,HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [{ 
-    provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi:true
-  },],
+  providers: [],
   exports:[RouterModule],
   bootstrap: [AppComponent]
 })
